@@ -1,7 +1,10 @@
 <?php
 
+//A faire corriger 
+
 class Character {
     
+    //attribut avec une visibilité protected -> ne peuvent être instancié que dans des classes filles
     protected int $life; 
     protected string $name;
     

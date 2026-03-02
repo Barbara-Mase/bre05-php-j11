@@ -1,5 +1,6 @@
 <?php
 
+//A faire corriger 
 
 require 'Warrior.php';
 require 'Mage.php'; 
@@ -15,17 +16,14 @@ $warrior = new Warrior();
 $warrior -> setLife(20);
 $warrior -> setName("Clara");
 $warrior -> setEnergy(30);
-echo "{$warrior->introduce()} j'ai un niveau d'énergie de {$warrior->getEnergy()}";
+echo "{$warrior->introduce()} j'ai un niveau d'énergie de {$warrior->getEnergy()} <br>";
 
 
-
-
-// $warrior -> setEnegergy
-// echo 
-
-
-// $mage = new Mage();
-// echo "{$mage->introduce()}";
+$mage = new Mage();
+$mage -> setLife(15);
+$mage -> setName("Lily");
+$mage -> setMana(35);
+echo "{$mage->introduce()} j'ai un nombre de point de vie de {$mage->getLife()} et un nombre de point de mana de {$mage->getMana()}";
 
 
 
